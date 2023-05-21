@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap');
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;               /*junta tudo no canto para fazer outras alterações*/
+    flex-direction: row;        /*Transforma em uma linha (row) e (colum) fica       um debaixo do outro como uma coluna*/
+    justify-content: space-between;     /*Faz a separação (cria um espaço)entre eles | (arround) cria um espaço em volta deles*/
+    align-items: center;
+}
+
+#title{
+    flex-direction: coluna;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;  /*vai ordenar a lista na ordem horizontal*/
+    margin: 20px;           /*Aqui é pra dar espaço entre eles*/
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 281);  /*Efeito do menu*/
+    transition: 0.3s all;
+}
+
+#inscreva-se{
+    border: 2px solid  rgb(132, 14, 281);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#inscreva-se:hover{
+    background-color:  rgb(132, 14, 281); /*efeito do botão*/
+    color: white;
+}
+h1{
+    font-weight: 200;       /*Aqui vai diminuir a espeçura do texto*/
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;          /*aproximar do titulo*/
+    font-family: poppinsmedius;     /*Fonte menor e atraente*/
+}
+
+span{
+    color: rgb(132, 14, 281);
+}
+
+p{
+    line-height: 20px; /**/
+    max-width: 500px;   /*largura maxima de 500px*/
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;                 /*Aqui mostra o tamanho 70% da propriedade main*/
+}
+
+form [type='submit']{
+    height: 50px;               /*Aqui você da um espaçamento entre o elemento e a borda interna*/
+    width: 50%;                 /*Aqui coloca o tamanho do item*/
+    background-color:  rgb(132, 14, 281);
+    color: white;
+    font-weight: bold;          /*Aqui intensidade da fonte*/
+}
+
+form [type='submit']:hover{
+    cursor: pointer;            /*Aqui ao passar o mouse em cima do botão e muda de seta pra mão*/
+}
+
+input{
+    margin-top: 20px;       /*Aqui separa entre eles*/
+    height: 20px;           /*Aqui o botão fica maior*/
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
